@@ -13,10 +13,10 @@ Detail in the [paper](http://arxiv.org/abs/1506.02640).
 All prior detection systems repurpose classifiers or localizers to perform detection. They apply the model to an image at multiple locations and scales. High scoring regions of the image are considered detections.
 
 We use a totally different approach. We apply a single neural network to the full image. This network divides the image into regions and predicts bounding boxes and probabilities for each region. These bounding boxes are weighted by the predicted probabilities.
-![](https://pjreddie.com/media/image/model_2.png)
+![](docs/workflow.png)
 
 Finally, we can threshold the detections by some value to only see high scoring detections:
-![](https://pjreddie.com/media/image/Screen_Shot_2016-09-07_at_10.56.09_PM.png)
+![](docs/result.png)
 
 ## Citation
 
